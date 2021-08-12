@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+/* Custom Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #282828;
+  color: #fff;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+img {
+  max-width: 100%;
+}
+
+.card {
+  box-shadow: 0 5px 10px 10px rgba(44, 44, 44, 1);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 18.5rem;
+  margin: 1rem;
+}
+.card-header {
+  height: 13rem;
+}
+
+.card-header img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.card-content {
+  background-color: #4f525c;
+  padding: 1.5rem;
+}
+
+.card-title {
+  height: 1.1rem;
+  margin: 0;
+}
+
+.card-excerpt {
+  font-size: 0.9rem;
+  color: rgb(161, 161, 161);
+  margin: 0.8rem 0 1.2rem;
+}
+
+.author {
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.profile-img {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 2.8rem;
+  width: 2.8rem;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 0.6rem;
+}
+
+.author-info small {
+  color: #aaa;
+}
+
+.animated-bg {
+  background-image: linear-gradient(
+    to right,
+    #5e5e5e 0%,
+    #6b6b6b 10%,
+    #7a7a7a 20%,
+    #858585 100%
+  );
+
+  background-size: 200% 100%;
+  animation: bgPos 1s linear infinite;
+  opacity: 0.8;
+}
+
+.animated-bg-text {
+  border-radius: 50px;
+  display: inline-block;
+  margin: 0;
+  height: 12px;
+  width: 100%;
+  opacity: 0.8;
+}
+.name,
+.date {
+  min-width: 7rem;
+}
+
+@keyframes bgPos {
+  0% {
+    background-position: 50% 0;
+  }
+
+  100% {
+    background-position: -150% 0;
+  }
+}
